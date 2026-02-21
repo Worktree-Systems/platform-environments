@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   repository: 971997843851.dkr.ecr.ap-south-1.amazonaws.com/auth-service
-  tag: 1   # Jenkins will automatically update this
+  tag: 38
 
 service:
   type: ClusterIP
