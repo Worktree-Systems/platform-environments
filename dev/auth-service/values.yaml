@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   repository: 971997843851.dkr.ecr.ap-south-1.amazonaws.com/auth-service
-  tag: 38
+  tag: 40
 
 service:
   type: ClusterIP
