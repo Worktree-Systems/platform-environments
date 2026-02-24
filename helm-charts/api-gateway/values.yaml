@@ -1,0 +1,38 @@
+replicaCount: 1
+
+image:
+  repository: ""
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 2020
+
+resources: {}
+
+env:
+  SPRING_PROFILES_ACTIVE: k8s
+
+config:
+  redis:
+    host: ""
+    port: ""
+    timeout: ""
+  rateLimit:
+    enabled: ""
+    globalLimit: ""
+    windowSeconds: ""
+
+autoscaling:
+  enabled: false
+
+ingress:
+  enabled: false
+  host: ""
+  certificateArn: ""
+
+serviceAccount:
+  name: api-gateway-sa
+  roleArn: ""
