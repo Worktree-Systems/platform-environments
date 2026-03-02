@@ -21,7 +21,7 @@ config:
     port: ""
     timeout: ""
   rateLimit:
-    enabled: ""
+    enabled: false
     globalLimit: ""
     windowSeconds: ""
 
